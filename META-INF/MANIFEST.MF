@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+MixinConfigs: reignofnether.mixins.json
+Specification-Title: reignofnether
+Specification-Vendor: examplemodsareus
+Specification-Version: 1
+Implementation-Title: reignofnether-additions
+Implementation-Version: 1.1.1
+Implementation-Vendor: examplemodsareus
+Implementation-Timestamp: 2025-02-06T14:06:43+0100
+

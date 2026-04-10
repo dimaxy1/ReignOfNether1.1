@@ -1,0 +1,258 @@
+{
+  "mappings": {
+    "com/solegendary/reignofnether/mixin/fogofwar/ModelBlockRendererCacheMixin": {
+      "getShadeBrightness": "Lnet/minecraft/client/renderer/block/ModelBlockRenderer$Cache;m_111226_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)F"
+    },
+    "com/solegendary/reignofnether/mixin/OrthoViewMixin": {
+      "getProjectionMatrix(D)Lcom/mojang/math/Matrix4f;": "Lnet/minecraft/client/renderer/GameRenderer;m_172716_(D)Lcom/mojang/math/Matrix4f;"
+    },
+    "com/solegendary/reignofnether/mixin/fire/FireBlockMixin": {
+      "tick": "Lnet/minecraft/world/level/block/FireBlock;m_213897_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V",
+      "bootStrap": "Lnet/minecraft/world/level/block/FireBlock;m_53484_()V"
+    },
+    "com/solegendary/reignofnether/mixin/FrustumMixin": {
+      "cubeCompletelyInFrustum(FFFFFF)Z": "Lnet/minecraft/client/renderer/culling/Frustum;m_194443_(FFFFFF)Z"
+    },
+    "com/solegendary/reignofnether/mixin/SculkCatalystBlockEntityMixin": {
+      "handleGameEvent": "Lnet/minecraft/world/level/block/entity/SculkCatalystBlockEntity;m_214068_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gameevent/GameEvent$Message;)Z"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/LiquidBlockRendererMixin": {
+      "tesselate": "Lnet/minecraft/client/renderer/block/LiquidBlockRenderer;m_234369_(Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;)V"
+    },
+    "com/solegendary/reignofnether/mixin/ItemInHandLayerMixin": {
+      "renderArmWithItem": "Lnet/minecraft/client/renderer/entity/layers/ItemInHandLayer;m_117184_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "com/solegendary/reignofnether/mixin/LeavesBlockMixin": {
+      "getDistanceAt": "Lnet/minecraft/world/level/block/LeavesBlock;m_54463_(Lnet/minecraft/world/level/block/state/BlockState;)I"
+    },
+    "com/solegendary/reignofnether/mixin/ClientLevelMixin": {
+      "addDestroyBlockEffect": "Lnet/minecraft/client/multiplayer/ClientLevel;m_142052_(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V",
+      "playSound": "Lnet/minecraft/client/multiplayer/ClientLevel;m_233602_(DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZJ)V",
+      "playSeededSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFJ)V": "Lnet/minecraft/client/multiplayer/ClientLevel;m_214150_(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFJ)V",
+      "tickTime": "Lnet/minecraft/client/multiplayer/ClientLevel;m_104826_()V"
+    },
+    "com/solegendary/reignofnether/mixin/EvokerFangsMixin": {
+      "dealDamageTo": "Lnet/minecraft/world/entity/projectile/EvokerFangs;m_36944_(Lnet/minecraft/world/entity/LivingEntity;)V",
+      "tick": "Lnet/minecraft/world/entity/projectile/EvokerFangs;m_8119_()V"
+    },
+    "com/solegendary/reignofnether/mixin/LivingEntityMixin": {
+      "onChangedBlock": "Lnet/minecraft/world/entity/LivingEntity;m_5806_(Lnet/minecraft/core/BlockPos;)V"
+    },
+    "com/solegendary/reignofnether/mixin/AbstractArrowMixin": {
+      "onHitBlock": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_8060_(Lnet/minecraft/world/phys/BlockHitResult;)V",
+      "tickDespawn": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_6901_()V",
+      "tick": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_8119_()V",
+      "isNoPhysics": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_36797_()Z",
+      "onHitEntity": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+    },
+    "com/solegendary/reignofnether/mixin/EntityMixin": {
+      "isInvulnerableTo": "Lnet/minecraft/world/entity/Entity;m_6673_(Lnet/minecraft/world/damagesource/DamageSource;)Z",
+      "shouldRenderAtSqrDistance(D)Z": "Lnet/minecraft/world/entity/Entity;m_6783_(D)Z"
+    },
+    "com/solegendary/reignofnether/mixin/fire/MagmaBlockMixin": {
+      "stepOn": "Lnet/minecraft/world/level/block/MagmaBlock;m_141947_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "com/solegendary/reignofnether/mixin/ClientPacketMixin": {
+      "handleSetTime": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_7885_(Lnet/minecraft/network/protocol/game/ClientboundSetTimePacket;)V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/CompiledChunkMixin": {
+      "getRenderableBlockEntities": "Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk;m_112773_()Ljava/util/List;"
+    },
+    "com/solegendary/reignofnether/mixin/MobMixin": {
+      "setTarget": "Lnet/minecraft/world/entity/Mob;m_6710_(Lnet/minecraft/world/entity/LivingEntity;)V"
+    },
+    "com/solegendary/reignofnether/mixin/WitchMixin": {
+      "aiStep": "Lnet/minecraft/world/entity/monster/Witch;m_8107_()V"
+    },
+    "com/solegendary/reignofnether/mixin/BlazeMixin": {
+      "aiStep": "Lnet/minecraft/world/entity/monster/Blaze;m_8107_()V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/EntityShadowMixin": {
+      "renderShadow": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114457_(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;FFLnet/minecraft/world/level/LevelReader;F)V"
+    },
+    "com/solegendary/reignofnether/mixin/fire/WalkNodeEvaluatorMixin": {
+      "getBlockPathType(Lnet/minecraft/world/level/BlockGetter;III)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_8086_(Lnet/minecraft/world/level/BlockGetter;III)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"
+    },
+    "com/solegendary/reignofnether/mixin/TitleScreenMixin": {
+      "init": "Lnet/minecraft/client/gui/screens/TitleScreen;m_7856_()V",
+      "render": "Lnet/minecraft/client/gui/screens/TitleScreen;m_6305_(Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/LevelRendererMixin": {
+      "applyFrustum(Lnet/minecraft/client/renderer/culling/Frustum;)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194354_(Lnet/minecraft/client/renderer/culling/Frustum;)V",
+      "renderLevel": "Lnet/minecraft/client/renderer/LevelRenderer;m_109599_(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lcom/mojang/math/Matrix4f;)V",
+      "setupRender(Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/culling/Frustum;ZZ)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194338_(Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/culling/Frustum;ZZ)V",
+      "addParticleInternal(Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;": "Lnet/minecraft/client/renderer/LevelRenderer;m_109804_(Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;",
+      "compileChunks(Lnet/minecraft/client/Camera;)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194370_(Lnet/minecraft/client/Camera;)V"
+    },
+    "com/solegendary/reignofnether/mixin/RenderChunkRegionMixin": {
+      "getBlockState": "Lnet/minecraft/client/renderer/chunk/RenderChunkRegion;m_8055_(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;"
+    },
+    "com/solegendary/reignofnether/mixin/fire/BaseFireBlockMixin": {
+      "entityInside": "Lnet/minecraft/world/level/block/BaseFireBlock;m_7892_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/ModelBlockRendererMixin": {
+      "putQuadData": "Lnet/minecraft/client/renderer/block/ModelBlockRenderer;m_111023_(Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lnet/minecraft/client/renderer/block/model/BakedQuad;FFFFIIIII)V"
+    },
+    "com/solegendary/reignofnether/mixin/MobRendererMixin": {
+      "render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/MobRenderer;m_7392_(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "com/solegendary/reignofnether/mixin/TopdownGuiMixin": {
+      "renderHotbar": "Lnet/minecraft/client/gui/Gui;m_93009_(FLcom/mojang/blaze3d/vertex/PoseStack;)V",
+      "renderCrosshair": "Lnet/minecraft/client/gui/Gui;m_93080_(Lcom/mojang/blaze3d/vertex/PoseStack;)V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/EntityRenderDispatcherMixin": {
+      "renderFlame": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114453_(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;)V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/ItemEntityRendererMixin": {
+      "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/ItemEntityRenderer;m_7392_(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "com/solegendary/reignofnether/mixin/PlayerMixin": {
+      "tick()V": "Lnet/minecraft/world/entity/Entity;m_8119_()V"
+    },
+    "com/solegendary/reignofnether/mixin/fogofwar/SingleQuadParticleMixin": {
+      "render": "Lnet/minecraft/client/particle/SingleQuadParticle;m_5744_(Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/Camera;F)V"
+    },
+    "com/solegendary/reignofnether/mixin/ServerLevelMixin": {
+      "sendParticles(Lnet/minecraft/server/level/ServerPlayer;ZDDDLnet/minecraft/network/protocol/Packet;)Z": "Lnet/minecraft/server/level/ServerLevel;m_8636_(Lnet/minecraft/server/level/ServerPlayer;ZDDDLnet/minecraft/network/protocol/Packet;)Z"
+    },
+    "com/solegendary/reignofnether/mixin/MusicManagerMixin": {
+      "tick": "Lnet/minecraft/client/sounds/MusicManager;m_120183_()V"
+    },
+    "com/solegendary/reignofnether/mixin/ThrownPotionMixin": {
+      "makeAreaOfEffectCloud": "Lnet/minecraft/world/entity/projectile/ThrownPotion;m_37537_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/alchemy/Potion;)V"
+    },
+    "com/solegendary/reignofnether/mixin/CameraMixin": {
+      "move": "Lnet/minecraft/client/Camera;m_90568_(DDD)V",
+      "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/solegendary/reignofnether/mixin/fogofwar/ModelBlockRendererCacheMixin": {
+        "getShadeBrightness": "Lnet/minecraft/client/renderer/block/ModelBlockRenderer$Cache;m_111226_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;)F"
+      },
+      "com/solegendary/reignofnether/mixin/OrthoViewMixin": {
+        "getProjectionMatrix(D)Lcom/mojang/math/Matrix4f;": "Lnet/minecraft/client/renderer/GameRenderer;m_172716_(D)Lcom/mojang/math/Matrix4f;"
+      },
+      "com/solegendary/reignofnether/mixin/fire/FireBlockMixin": {
+        "tick": "Lnet/minecraft/world/level/block/FireBlock;m_213897_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)V",
+        "bootStrap": "Lnet/minecraft/world/level/block/FireBlock;m_53484_()V"
+      },
+      "com/solegendary/reignofnether/mixin/FrustumMixin": {
+        "cubeCompletelyInFrustum(FFFFFF)Z": "Lnet/minecraft/client/renderer/culling/Frustum;m_194443_(FFFFFF)Z"
+      },
+      "com/solegendary/reignofnether/mixin/SculkCatalystBlockEntityMixin": {
+        "handleGameEvent": "Lnet/minecraft/world/level/block/entity/SculkCatalystBlockEntity;m_214068_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/level/gameevent/GameEvent$Message;)Z"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/LiquidBlockRendererMixin": {
+        "tesselate": "Lnet/minecraft/client/renderer/block/LiquidBlockRenderer;m_234369_(Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/material/FluidState;)V"
+      },
+      "com/solegendary/reignofnether/mixin/ItemInHandLayerMixin": {
+        "renderArmWithItem": "Lnet/minecraft/client/renderer/entity/layers/ItemInHandLayer;m_117184_(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;Lnet/minecraft/world/entity/HumanoidArm;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "com/solegendary/reignofnether/mixin/LeavesBlockMixin": {
+        "getDistanceAt": "Lnet/minecraft/world/level/block/LeavesBlock;m_54463_(Lnet/minecraft/world/level/block/state/BlockState;)I"
+      },
+      "com/solegendary/reignofnether/mixin/ClientLevelMixin": {
+        "addDestroyBlockEffect": "Lnet/minecraft/client/multiplayer/ClientLevel;m_142052_(Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)V",
+        "playSound": "Lnet/minecraft/client/multiplayer/ClientLevel;m_233602_(DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFZJ)V",
+        "playSeededSound(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFJ)V": "Lnet/minecraft/client/multiplayer/ClientLevel;m_214150_(Lnet/minecraft/world/entity/player/Player;DDDLnet/minecraft/sounds/SoundEvent;Lnet/minecraft/sounds/SoundSource;FFJ)V",
+        "tickTime": "Lnet/minecraft/client/multiplayer/ClientLevel;m_104826_()V"
+      },
+      "com/solegendary/reignofnether/mixin/EvokerFangsMixin": {
+        "dealDamageTo": "Lnet/minecraft/world/entity/projectile/EvokerFangs;m_36944_(Lnet/minecraft/world/entity/LivingEntity;)V",
+        "tick": "Lnet/minecraft/world/entity/projectile/EvokerFangs;m_8119_()V"
+      },
+      "com/solegendary/reignofnether/mixin/LivingEntityMixin": {
+        "onChangedBlock": "Lnet/minecraft/world/entity/LivingEntity;m_5806_(Lnet/minecraft/core/BlockPos;)V"
+      },
+      "com/solegendary/reignofnether/mixin/AbstractArrowMixin": {
+        "onHitBlock": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_8060_(Lnet/minecraft/world/phys/BlockHitResult;)V",
+        "tickDespawn": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_6901_()V",
+        "tick": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_8119_()V",
+        "isNoPhysics": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_36797_()Z",
+        "onHitEntity": "Lnet/minecraft/world/entity/projectile/AbstractArrow;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+      },
+      "com/solegendary/reignofnether/mixin/EntityMixin": {
+        "isInvulnerableTo": "Lnet/minecraft/world/entity/Entity;m_6673_(Lnet/minecraft/world/damagesource/DamageSource;)Z",
+        "shouldRenderAtSqrDistance(D)Z": "Lnet/minecraft/world/entity/Entity;m_6783_(D)Z"
+      },
+      "com/solegendary/reignofnether/mixin/fire/MagmaBlockMixin": {
+        "stepOn": "Lnet/minecraft/world/level/block/MagmaBlock;m_141947_(Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "com/solegendary/reignofnether/mixin/ClientPacketMixin": {
+        "handleSetTime": "Lnet/minecraft/client/multiplayer/ClientPacketListener;m_7885_(Lnet/minecraft/network/protocol/game/ClientboundSetTimePacket;)V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/CompiledChunkMixin": {
+        "getRenderableBlockEntities": "Lnet/minecraft/client/renderer/chunk/ChunkRenderDispatcher$CompiledChunk;m_112773_()Ljava/util/List;"
+      },
+      "com/solegendary/reignofnether/mixin/MobMixin": {
+        "setTarget": "Lnet/minecraft/world/entity/Mob;m_6710_(Lnet/minecraft/world/entity/LivingEntity;)V"
+      },
+      "com/solegendary/reignofnether/mixin/WitchMixin": {
+        "aiStep": "Lnet/minecraft/world/entity/monster/Witch;m_8107_()V"
+      },
+      "com/solegendary/reignofnether/mixin/BlazeMixin": {
+        "aiStep": "Lnet/minecraft/world/entity/monster/Blaze;m_8107_()V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/EntityShadowMixin": {
+        "renderShadow": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114457_(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;FFLnet/minecraft/world/level/LevelReader;F)V"
+      },
+      "com/solegendary/reignofnether/mixin/fire/WalkNodeEvaluatorMixin": {
+        "getBlockPathType(Lnet/minecraft/world/level/BlockGetter;III)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;": "Lnet/minecraft/world/level/pathfinder/WalkNodeEvaluator;m_8086_(Lnet/minecraft/world/level/BlockGetter;III)Lnet/minecraft/world/level/pathfinder/BlockPathTypes;"
+      },
+      "com/solegendary/reignofnether/mixin/TitleScreenMixin": {
+        "init": "Lnet/minecraft/client/gui/screens/TitleScreen;m_7856_()V",
+        "render": "Lnet/minecraft/client/gui/screens/TitleScreen;m_6305_(Lcom/mojang/blaze3d/vertex/PoseStack;IIF)V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/LevelRendererMixin": {
+        "applyFrustum(Lnet/minecraft/client/renderer/culling/Frustum;)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194354_(Lnet/minecraft/client/renderer/culling/Frustum;)V",
+        "renderLevel": "Lnet/minecraft/client/renderer/LevelRenderer;m_109599_(Lcom/mojang/blaze3d/vertex/PoseStack;FJZLnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/GameRenderer;Lnet/minecraft/client/renderer/LightTexture;Lcom/mojang/math/Matrix4f;)V",
+        "setupRender(Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/culling/Frustum;ZZ)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194338_(Lnet/minecraft/client/Camera;Lnet/minecraft/client/renderer/culling/Frustum;ZZ)V",
+        "addParticleInternal(Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;": "Lnet/minecraft/client/renderer/LevelRenderer;m_109804_(Lnet/minecraft/core/particles/ParticleOptions;ZZDDDDDD)Lnet/minecraft/client/particle/Particle;",
+        "compileChunks(Lnet/minecraft/client/Camera;)V": "Lnet/minecraft/client/renderer/LevelRenderer;m_194370_(Lnet/minecraft/client/Camera;)V"
+      },
+      "com/solegendary/reignofnether/mixin/RenderChunkRegionMixin": {
+        "getBlockState": "Lnet/minecraft/client/renderer/chunk/RenderChunkRegion;m_8055_(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;"
+      },
+      "com/solegendary/reignofnether/mixin/fire/BaseFireBlockMixin": {
+        "entityInside": "Lnet/minecraft/world/level/block/BaseFireBlock;m_7892_(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/ModelBlockRendererMixin": {
+        "putQuadData": "Lnet/minecraft/client/renderer/block/ModelBlockRenderer;m_111023_(Lnet/minecraft/world/level/BlockAndTintGetter;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/BlockPos;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lcom/mojang/blaze3d/vertex/PoseStack$Pose;Lnet/minecraft/client/renderer/block/model/BakedQuad;FFFFIIIII)V"
+      },
+      "com/solegendary/reignofnether/mixin/MobRendererMixin": {
+        "render(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/MobRenderer;m_7392_(Lnet/minecraft/world/entity/Mob;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "com/solegendary/reignofnether/mixin/TopdownGuiMixin": {
+        "renderHotbar": "Lnet/minecraft/client/gui/Gui;m_93009_(FLcom/mojang/blaze3d/vertex/PoseStack;)V",
+        "renderCrosshair": "Lnet/minecraft/client/gui/Gui;m_93080_(Lcom/mojang/blaze3d/vertex/PoseStack;)V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/EntityRenderDispatcherMixin": {
+        "renderFlame": "Lnet/minecraft/client/renderer/entity/EntityRenderDispatcher;m_114453_(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/world/entity/Entity;)V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/ItemEntityRendererMixin": {
+        "render(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V": "Lnet/minecraft/client/renderer/entity/ItemEntityRenderer;m_7392_(Lnet/minecraft/world/entity/item/ItemEntity;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "com/solegendary/reignofnether/mixin/PlayerMixin": {
+        "tick()V": "Lnet/minecraft/world/entity/Entity;m_8119_()V"
+      },
+      "com/solegendary/reignofnether/mixin/fogofwar/SingleQuadParticleMixin": {
+        "render": "Lnet/minecraft/client/particle/SingleQuadParticle;m_5744_(Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/Camera;F)V"
+      },
+      "com/solegendary/reignofnether/mixin/ServerLevelMixin": {
+        "sendParticles(Lnet/minecraft/server/level/ServerPlayer;ZDDDLnet/minecraft/network/protocol/Packet;)Z": "Lnet/minecraft/server/level/ServerLevel;m_8636_(Lnet/minecraft/server/level/ServerPlayer;ZDDDLnet/minecraft/network/protocol/Packet;)Z"
+      },
+      "com/solegendary/reignofnether/mixin/MusicManagerMixin": {
+        "tick": "Lnet/minecraft/client/sounds/MusicManager;m_120183_()V"
+      },
+      "com/solegendary/reignofnether/mixin/ThrownPotionMixin": {
+        "makeAreaOfEffectCloud": "Lnet/minecraft/world/entity/projectile/ThrownPotion;m_37537_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/alchemy/Potion;)V"
+      },
+      "com/solegendary/reignofnether/mixin/CameraMixin": {
+        "move": "Lnet/minecraft/client/Camera;m_90568_(DDD)V",
+        "setup": "Lnet/minecraft/client/Camera;m_90575_(Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/world/entity/Entity;ZZF)V"
+      }
+    }
+  }
+}
